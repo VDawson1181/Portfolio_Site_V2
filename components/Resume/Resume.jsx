@@ -19,7 +19,7 @@ const Resume = () => {
                     <h2>Front-End Developer</h2>
                     <h3>347.605.3414</h3>
                     <h3>VDawson647@gmail.com</h3>
-                    <h3>WebSiteAddr</h3>
+                    <h3>https://vdawson647.dev/</h3>
                 </div>
                 <div className="resumeOverview resumeContainer">
                     <p className='subHeader'>Overview</p>
