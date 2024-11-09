@@ -1,21 +1,34 @@
 import React from 'react';
+import vdResume from '/VDawson647_Resume.pdf'
+import { FaLinkedinIn } from "react-icons/fa6";
+import { RiFilePaper2Line } from "react-icons/ri";
+import { FaRegFolderOpen } from "react-icons/fa6";
+import { MdContactMail } from "react-icons/md";
 import './Navbar.css'
-import { NavLink } from 'react-router-dom';
+
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-        <div className='navLeftSide'>
-        <NavLink to="/my-react-app/">NT.com</NavLink>
-        </div>
-        <div className="navRightSide">            
-            <NavLink to="/my-react-app/about">About</NavLink>
-            <NavLink to="/my-react-app/portfolio">Packages</NavLink>
-            <NavLink to="/my-react-app/Blogs">Blogs</NavLink>
-            <NavLink to="/my-react-app/Emails">Emails</NavLink>
-            <NavLink to="/my-react-app/contact">Contact</NavLink>
-        </div>
-    </nav>
+    <>
+      <ul className="infoRundown">
+        <li>
+          <p><a href="https://www.linkedin.com/in/vdawson647/"  target="_blank"><FaLinkedinIn /></a></p>
+          <p>LinkedIn</p>
+        </li>
+        {/* <li>
+          <p><a href={vdResume} download="VDawson_Resume"><RiFilePaper2Line /></a></p>
+          <p>Resume</p>
+        </li>
+        <li>
+          <p><a><FaRegFolderOpen /></a></p>
+          <p>Portfolio</p>
+        </li> */}
+        <li>            
+          <p><a href="mailto:VDawson647@gmail.com"><MdContactMail /></a></p>
+          <p>Contact</p>
+        </li>
+      </ul>
+    </>
   )
 }
 

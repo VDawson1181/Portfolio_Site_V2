@@ -16,7 +16,7 @@ function Button(props){
     // const handleClick2 = (name) => console.log(`${name} stop clicking me!`);
 
     return(
-        <button className="button" onClick={(e) => handleClick(e,props.name, props.indexNo, props.url)}>Try Me</button>
+        <button className="button" onClick={(e) => handleClick(e,props.name, props.indexNo, props.url)}>View</button>
         // <button className="button" onClick={() => handleClick2(props.name)}>Click Me</button>
     );
 }
