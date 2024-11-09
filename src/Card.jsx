@@ -10,15 +10,14 @@ function Card(props){
 
       const cards = userList.map((item, index) => <div key={index} className={item.isValid ? "card cardValid" : "card cardInvalid"}>
             {/* <p>User #{index+1}</p> */}
-            <img className="card-image" src={item.image} alt="Image" loading="lazy"/>
             <div className="cardContent">
                 <h2 className="card-title">{item.name}</h2>
                 <p className="card-text">{item.copy}</p>     
                 {/* <p className="card-text">Age: {item.age}</p>      */}
                 {/* <p>{item.isValid ? <Button indexNo={index+1} name={item.name} url={item.url}/> : "Invalid User"}</p>  */}
-                
+                <Button indexNo={index+1} name={item.name} url={item.url}/>                
             </div>
-            <Button indexNo={index+1} name={item.name} url={item.url}/>
+                <img className="card-image" src={item.image} alt="Image" loading="lazy"/>
         </div>);
 
 
@@ -29,20 +28,20 @@ function Card(props){
             </>
         );
 }
-Card.propTypes = {
-    category: PropTypes.string,
-    items: PropTypes.arrayOf(PropTypes.shape({
-        name: PropTypes.string,
-        copy: PropTypes.string,
-        age: PropTypes.number,
-        isValid: PropTypes.bool,
-        image: PropTypes.string,
-    })),
+// Card.propTypes = {
+//     category: PropTypes.string,
+//     items: PropTypes.arrayOf(PropTypes.shape({
+//         name: PropTypes.string,
+//         copy: PropTypes.string,
+//         age: PropTypes.number,
+//         isValid: PropTypes.bool,
+//         image: PropTypes.string,
+//     })),
 
     
-}
-Card.defaultProps = {
-    category: "Category",
-    items:[],
-}
+// }
+// Card.defaultProps = {
+//     category: "Category",
+//     items:[],
+// }
 export default Card;

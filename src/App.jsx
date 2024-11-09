@@ -1,7 +1,13 @@
 import { useState } from 'react'
+import { FaLinkedinIn } from "react-icons/fa6";
+import { RiFilePaper2Line } from "react-icons/ri";
+import { FaRegFolderOpen } from "react-icons/fa6";
+import { MdContactMail } from "react-icons/md";
+
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 // image import
+import rewardsScr from './assets/rewards_scr.png'
 import woodlockedLogo from './assets/woodlocked_Scr.png'
 import prizeMatcherLogo from './assets/prizeMatcher_Scr.png'
 import moneyDropLogo from './assets/moneyDrop_Scr.png'
@@ -24,21 +30,22 @@ function App() {
     //Random Image -- https://picsum.photos/150/150
 
     const professional = [
-      {name: "Woodlocked", copy: "Construction Company Site", url: "https://vdawson1181.github.io/WoodlockedProj/index.html", isValid: true, image: woodlockedLogo},
+      {name: "PCH Rewards", copy: "PCH Rewards Site", url: "https://rewards.pch.com/", isValid: true, image: rewardsScr},
       {name: "Prize Matcher", copy: "Publishers Clearing House Interactive Prize Component", url: "https://vdawson1181.github.io/portfolio-files/PrizeMatcher_Component/pm_LB_Component.html", isValid: true, image: prizeMatcherLogo},
+      {name: "Woodlocked", copy: "Construction Company Site", url: "https://vdawson1181.github.io/WoodlockedProj/index.html", isValid: true, image: woodlockedLogo},
       {name: "Money Drop", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/MoneyDrop/page1.html", isValid: true, image: moneyDropLogo},
-      {name: "Money Tree", copy: "Publishers Clearing House E-Commerce Component", url: "https://vdawson1181.github.io/portfolio-files/money-tree-OB-addOn/preview.html", isValid: true, image: moneyTreeLogo},
-      {name: "Important Info", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Important_Info/page1.html", isValid: true, image: impInfoLogo},
+      {name: "Money Tree", copy: "Publishers Clearing House E-Commerce Component", url: "https://vdawson1181.github.io/portfolio-files/money-tree-OB-addOn/preview.html", isValid: false, image: moneyTreeLogo},
+      {name: "Important Info", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Important_Info/page1.html", isValid: false, image: impInfoLogo},
       {name: "Make It Count", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Make_It_Count/page1.html", isValid: true, image: makeItCountLogo},
       {name: "Win 1MM Tonight", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Win_1MM_Tonight_V13/page1.html", isValid: true, image: winTonightLogo},
-      {name: "Day of Deals V4", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Day_Of_Deals_V4/page1.html", isValid: true, image: dayOfDealsLogo},
-      {name: "Prize Payment Transaction", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Prize_Payment_Trans_V3/page1.html", isValid: true, image: prizePayTransLogo},
+      {name: "Day of Deals V4", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Day_Of_Deals_V4/page1.html", isValid: false, image: dayOfDealsLogo},
+      {name: "Prize Payment Transaction", copy: "Publishers Clearing House E-Commerce Landing Page", url: "https://vdawson1181.github.io/portfolio-files/Prize_Payment_Trans_V3/page1.html", isValid: false, image: prizePayTransLogo},
     ];
-    const projects = [
-      {name: "Outrun Banner", copy: "Animated Proof Of Concept", url: "https://vdawson1181.github.io/portfolio-files/Outrun/page1.html", isValid: true, image: outrunLogo},
-      {name: "GSAP Bubbles Demo", copy: "Animated Proof Of Concept", url: "https://vdawson1181.github.io/portfolio-files/ParticlesDemo_3/Bubbles.html", isValid: true, image: bubblesLogo},
-      {name: "Dad Joke Generator", copy: "Simple page that pulls a joke from an API. Resets in 24 Hrs", url: "https://vdawson1181.github.io/portfolio-files/Dad_Joke_Gen/dad_Joke_API.html", isValid: true, image: jokesLogo},
-    ];
+    // const projects = [
+    //   {name: "Outrun Banner", copy: "Animated Proof Of Concept", url: "https://vdawson1181.github.io/portfolio-files/Outrun/page1.html", isValid: true, image: outrunLogo},
+    //   {name: "GSAP Bubbles Demo", copy: "Animated Proof Of Concept", url: "https://vdawson1181.github.io/portfolio-files/ParticlesDemo_3/Bubbles.html", isValid: true, image: bubblesLogo},
+    //   {name: "Dad Joke Generator", copy: "Simple page that pulls a joke from an API. Resets in 24 Hrs", url: "https://vdawson1181.github.io/portfolio-files/Dad_Joke_Gen/dad_Joke_API.html", isValid: true, image: jokesLogo},
+    // ];
   
 
   const [count, setCount] = useState(0)
@@ -56,8 +63,27 @@ function App() {
         
       <section id="MainPage">
         <div className="mainHeader">
-          <h1>VDawson647 <span>-Portfolio site-</span></h1>
+          <h1>Val Dawson</h1>
+          <h2>Front-End Developer</h2>
         </div>
+        <ul className="infoRundown">
+          <li>
+            <p><a href="https://www.linkedin.com/in/vdawson647/"  target="_blank"><FaLinkedinIn /></a></p>
+            <p>LinkedIn</p>
+          </li>
+          <li>
+            <p><a href={vdResume} download="VDawson_Resume"><RiFilePaper2Line /></a></p>
+            <p>Resume</p>
+          </li>
+          <li>
+            <p><a onClick={handleToggle}><FaRegFolderOpen /></a></p>
+            <p>Portfolio</p>
+          </li>
+          <li>            
+            <p><a href="mailto:VDawson647@gmail.com"><MdContactMail /></a></p>
+            <p>Contact</p>
+          </li>
+        </ul>
         <div className="mainDescription">
           <p>Hi, I'm Valmon Dawson — A UI/UX centered Front-End Developer</p>
           <p>With over 15 years of experience in building dynamic, user-focused eCommerce solutions, I specialize in transforming complex challenges into seamless digital experiences. My expertise spans across UI/UX design, front-end development, and team leadership, with a proven history of delivering high-impact projects that drive both revenue and engagement.</p>
@@ -65,22 +91,14 @@ function App() {
           <p>Browse through my work to explore my experiences in creating winning contest-driven solutions, and see how I've helped design interactive, high-conversion elements that deliver real results.</p>
         </div>
 
-        <ul className="infoRundown">
-          <li><a href="https://www.linkedin.com/in/vdawson647/"  target="_blank">My LinkedIn</a></li>
-          <li><a href={vdResume} download="VDawson_Resume">My Resume</a></li>
-          <li><a onClick={handleToggle}>My Portfolio</a></li>
-          <li><a href="mailto:VDawson647@gmail.com">Email</a></li>
-        </ul>
-        <div className="animation">
 
-        </div>
       </section>
       <section id="portfolio" className={view ? 'active':'inactive'}>
-        <a className="portfolio_close" onClick={handleToggle}>X</a>
+        {/* <a className="portfolio_close" onClick={handleToggle}>X</a> */}
         <div id="cardContainer">
           <h1>Portfolio</h1>
-          {projects.length > 0 && <Card items={professional} category="Professional Work"/>}
-          {projects.length > 0 && <Card items={projects} category="Personal Projects"/>}
+          {professional.length > 0 && <Card items={professional} category="Professional Work"/>}
+          {/* {projects.length > 0 && <Card items={projects} category="Personal Projects"/>} */}
         </div>
       </section>
       {/* <dialog id="contactme">
