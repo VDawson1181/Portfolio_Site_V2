@@ -95,9 +95,17 @@ background: linear-gradient(348deg, rgba(0,0,0,1) 0%, rgba(9,121,75,1) 50%, rgba
       text-align: left;
       font-size: clamp(1.35rem, 4vw, 1rem);
       line-height: clamp(1.35rem, 4vw, 1.75rem);
+      padding-bottom: 15px;
     }
   } 
 }
+
+/* #portfolio.inactive, #resume.inactive{
+  display: none;
+}
+#portfolio.active, #resume.active{
+  display: block;
+} */
 
 
 @media (width <= 500px) {

@@ -10,7 +10,7 @@ const Resume = () => {
 
     return (
         <>
-        <section className="resume"> 
+        <div className="resume"> 
             <h6>Resume <button onClick={reactToPrintFn}><FaPrint /></button></h6>
 
             <div className="resumeInner" ref={contentRef}>
@@ -24,7 +24,7 @@ const Resume = () => {
                 <div className="resumeOverview resumeContainer">
                     <p className='subHeader'>Overview</p>
                     <hr />
-                    <p className="sectionMain">Results-driven Front-End Developer with over 15 years of experience in building and managing dynamic ECommerce solutions. Proven expertise in UI/UX design, front-end technologies, and team leadership, with a demonstrated track record of delivering high-impact web applications and daily email marketing campaigns to an audience of 15.1 million, generating $125 million annually. Adept at collaborating with cross-functional teams and managing complex workflows.</p>
+                    <p className="sectionMain">Results-driven Front-End Developer with over 15 years of experience in building and managing dynamic eCommerce solutions. Proven expertise in UI/UX design, front-end technologies, and team leadership, with a demonstrated track record of delivering high-impact web applications and daily email marketing campaigns to an audience of 15.1 million, generating $125 million annually. Adept at collaborating with cross-functional teams and managing complex workflows.</p>
                 </div>
                 <div className="resumeSkills resumeContainer">
                     <p className='subHeader'>Skills</p>
@@ -40,7 +40,7 @@ const Resume = () => {
                         </li>
                         <li>
                             <p className='subHeader'>Specialties</p>
-                            <p className="subCopy">UI/UX Design, Lead Generation, Direct Marketing, ECommerce Development</p>
+                            <p className="subCopy">UI/UX Design, Lead Generation, Direct Marketing, eCommerce Development</p>
                         </li>
     
                     </ul>
@@ -56,8 +56,8 @@ const Resume = () => {
                                     <p className='subHeader'>Senior Front-End Developer <span>Apr. 2017 - Oct. 2024 — Jericho, NY</span></p>
                                     <ul className='responsibilityList'>
                                         <li>Created components for PCH's rewards site.</li>
-                                        <li>Built ECommerce landing pages.</li>
-                                        <li>Team lead for our ECommerce team.
+                                        <li>Built eCommerce landing pages.</li>
+                                        <li>Team lead for our eCommerce team.
                                             <ul>
                                                 <li>Providing training & guidance to the team.</li>
                                                 <li>Managed team's workflow</li>
@@ -69,9 +69,9 @@ const Resume = () => {
                                 <li className='employerJob'>
                                     <p className='subHeader'>Front-End Developer <span>Apr. 2009 - Apr. 2017 — Port Washington, NY</span></p>
                                     <ul className='responsibilityList'>
-                                        <li>Develop, modify, troubleshoot, and maintain bespoke ECommerce landing pages (packages) created with HTML5, CSS3, JavaScript, & GSAP.</li>
-                                        <li>Modified, troubleshot, and maintained the continuing useability of our ECommerce landing page library.</li>
-                                        <li>Work closely with the creative, legal, marketing, and operations teams to create, update, fix, and maintain our expanding library of ECommerce landing pages.</li>
+                                        <li>Develop, modify, troubleshoot, and maintain bespoke eCommerce landing pages (packages) created with HTML5, CSS3, JavaScript, & GSAP.</li>
+                                        <li>Modified, troubleshot, and maintained the continuing useability of our eCommerce landing page library.</li>
+                                        <li>Work closely with the creative, legal, marketing, and operations teams to create, update, fix, and maintain our expanding library of eCommerce landing pages.</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -102,7 +102,7 @@ const Resume = () => {
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
         </>
     )
 }

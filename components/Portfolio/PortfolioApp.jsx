@@ -18,11 +18,7 @@ import Card from '../../src/Card'
 import './portfolio.css'
 
 const PortfolioApp = () => {
-    const [view, setView] = useState(false)
 
-    const handleToggle = () => {
-        setView(!view);
-      }
     const professional = [
         {
             isValid: true, 
@@ -103,14 +99,14 @@ const PortfolioApp = () => {
 
   return (
     <>
-        <section id="portfolio" className={view ? 'active':'inactive'}>
+        <div className="portfolio">
             {/* <a className="portfolio_close" onClick={handleToggle}>X</a> */}
             <div className="cardContainer">
             <h1>Portfolio</h1>
             {professional.length > 0 && <Card items={professional} category="Professional Work"/>}
             {/* {projects.length > 0 && <Card items={projects} category="Personal Projects"/>} */}
             </div>
-        </section>
+        </div>
     </>
   )
 }
