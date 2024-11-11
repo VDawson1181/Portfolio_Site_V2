@@ -191,91 +191,131 @@
         display: none;
       }
 
-    .resumeInner {
-        background-color: #fff;
-        color: #000;
-        padding: 20px;
-        font-size: 12px;
-        line-height: 18px;
-
-        .resumeHeader{
-            border-bottom: 2px solid #000;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-
-            h1{ 
-                font-size: 44px;
-                line-height: 44px;
-                font-weight: bold;
-                text-align: center;
-            }
-        
-            h2 {
-                font-size: 28px;
-                line-height: 32px;
-                padding-bottom: 10px;
-                text-align: center;
-            }
-        
-            h3 {
-                font-size: 20px;
-                line-height: 24px;
-                color: orangered;
-            }
+    .resume{
+    
+        & > h6{
+            display: none;
         }
 
-        .resumeContainer{
-            display: flex;
-
-            & > .subHeader{
-                min-width: 70px;
-                padding: 10px 0;
-                flex: 1;
-                width: calc(100% / 3 * 1 + 0.0033rem);
-            }
-            hr{
-                border: none;
-                width: 2px;
-                background-color: orangered;
-                padding: 0;
-                margin: 0 10px;
-            }
-            
-            .sectionMain{
-                padding: 10px 0;
-                width: calc(100% / 3 * 2.5 + 0.0033rem);
-                border-bottom: 2px solid #000;
-            }
-            &:first-of-type .sectionMain{
-                border: none;
-            }
-            &:last-of-type .sectionMain{
-                border: none;
-            }
-        }
-
-        .resumeOverview .sectionMain {
-            font-size: 10px;
-            line-height: 14px;
-        }
-
-        .resumeSkills .sectionMain .subCopy{
-            font-weight: bold;
-            padding-bottom: 10px;
-            font-size: 14px;
+        .resumeInner {
+            background-color: #fff;
+            color: #000;
+            padding: 20px;
+            font-size: 12px;
             line-height: 18px;
-        }
 
-        .resumeWork .sectionMain li{
-            p.employerHeader{
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 22px;
+            .resumeHeader{
+                border-bottom: 2px solid #000;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+
+                h1{ 
+                    font-size: 44px;
+                    line-height: 44px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            
+                h2 {
+                    font-size: 28px;
+                    line-height: 32px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                }
+            
+                h3 {
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: orangered;
+                }
             }
-            ul li.employerJob{
-                padding: 5px 0 10px 20px;
 
+            .resumeContainer{
+                display: flex;
+
+                & > .subHeader{
+                    min-width: 70px;
+                    padding: 10px 0;
+                    flex: 1;
+                    width: calc(100% / 3 * 1 + 0.0033rem);
+                }
+                hr{
+                    border: none;
+                    width: 2px;
+                    background-color: orangered;
+                    padding: 0;
+                    margin: 0 10px;
+                }
+                
+                .sectionMain{
+                    padding: 10px 0;
+                    width: calc(100% / 3 * 2.5 + 0.0033rem);
+                    border-bottom: 2px solid #000;
+                }
+                &:first-of-type .sectionMain{
+                    border: none;
+                }
+                &:last-of-type .sectionMain{
+                    border: none;
+                }
+            }
+
+            .resumeOverview .sectionMain {
+                font-size: 10px;
+                line-height: 14px;
+            }
+
+            .resumeSkills .sectionMain .subCopy{
+                font-weight: bold;
+                padding-bottom: 10px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            .resumeWork .sectionMain li{
+                p.employerHeader{
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                ul li.employerJob{
+                    padding: 5px 0 10px 20px;
+
+                    p.subHeader{
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 18px;
+
+                        span{
+                            font-size: 12px;
+                            line-height: 16px;
+                            display: block;
+                            font-weight: normal;
+                            color: grey;
+                        }
+                    }
+                    .responsibilityList{
+                        padding-left: 20px;
+                        font-size: 12px;
+                        line-height:16px;
+        
+                        li{
+                            list-style:disc;
+                        }
+                    }
+                }
+            }
+
+            .resumeEducation .sectionMain{ 
+                > li{
+                    padding-bottom: 10px;
+                }
                 p.subHeader{
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                p.subCopy{
                     font-weight: bold;
                     font-size: 14px;
                     line-height: 18px;
@@ -288,52 +328,18 @@
                         color: grey;
                     }
                 }
-                .responsibilityList{
-                    padding-left: 20px;
-                    font-size: 12px;
-                    line-height:16px;
-    
+                ul.responsibilityList{
+                    /* padding: 5px 0 5px 20px; */
+
+                    padding-left: 40px;
+                    
                     li{
+                        font-size: 14px;
+                        line-height:18px;
                         list-style:disc;
                     }
                 }
             }
         }
-
-        .resumeEducation .sectionMain{ 
-            > li{
-                padding-bottom: 10px;
-            }
-            p.subHeader{
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 28px;
-            }
-            p.subCopy{
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 18px;
-
-                span{
-                    font-size: 12px;
-                    line-height: 16px;
-                    display: block;
-                    font-weight: normal;
-                    color: grey;
-                }
-            }
-            ul.responsibilityList{
-                /* padding: 5px 0 5px 20px; */
-
-                padding-left: 40px;
-                
-                 li{
-                    font-size: 14px;
-                    line-height:18px;
-                    list-style:disc;
-                }
-            }
-        }
     }
-    
   }
