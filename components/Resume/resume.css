@@ -187,6 +187,10 @@
         margin: 0 !important; padding: 0 !important;
       }
 
+      #MainPage, #portfolio{
+        display: none;
+      }
+
     .resumeInner {
         background-color: #fff;
         color: #000;
