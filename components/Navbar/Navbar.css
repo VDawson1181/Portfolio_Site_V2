@@ -4,7 +4,7 @@ ul.infoRundown{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    margin: 0;
+    margin: 0 0 10px;
     padding: 0;
 
     li{
@@ -37,8 +37,8 @@ ul.infoRundown{
         }
 
         &:hover{
-          box-shadow: 10px 10px 0px hsl(0, 0%, 100%);
-          transform: scale(1.1);
+          box-shadow: 6px -6px 0px hsl(0, 0%, 100%);
+          /* transform: scale(1.1); */
   
           p:last-of-type{
             opacity: 1;
@@ -47,7 +47,7 @@ ul.infoRundown{
       }
       p:last-of-type{
         opacity: 0;
-        padding-top: 10px;
+        /* padding-top: 10px; */
       }
 
       &:hover{

@@ -1,4 +1,16 @@
 .contactMe{
+    max-width: 850px;
+    
+    & > h1{
+        font-size: 30px;
+        margin: 0;
+        padding: 10px;
+        /* grid-column: auto / span 3; */
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+
     p:first-of-type{
         background-color: #fff;
         width: 50px;

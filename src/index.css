@@ -22,7 +22,7 @@
 
 body {
 
-  margin: 20px;
+  margin: 10px;
   /* display: flex; */
   /* place-items: center; */
   max-width: 100vw;
@@ -72,8 +72,9 @@ background: linear-gradient(348deg, rgba(0,0,0,1) 0%, rgba(9,121,75,1) 50%, rgba
   box-sizing: border-box;
 
   & .mainHeader{
-    font-size:clamp(2vw, 4vw, 4vw);
-    line-height: 3vw;
+    /* font-size:clamp(4vw, 2.5vw, 2.5vw); */
+    font-size: 2.5vw;
+    line-height: 2.5vw;
     
 
     h1, h2{
@@ -86,7 +87,7 @@ background: linear-gradient(348deg, rgba(0,0,0,1) 0%, rgba(9,121,75,1) 50%, rgba
   .mainDescription{
     max-width: 950px;
     /* margin: 0 auto; */
-    padding: 0 5px 20px;
+    /* padding: 0 5px 20px; */
 
     /* & p:first-of-type{
       text-align: center;
@@ -114,6 +115,15 @@ background: linear-gradient(348deg, rgba(0,0,0,1) 0%, rgba(9,121,75,1) 50%, rgba
     max-width: 100vw;
     min-width: 320px;
     min-height: 100vh;
+  }
+
+  #MainPage{
+    box-sizing: border-box;
+  
+    & .mainHeader{
+      font-size: 4.5vw;
+      line-height: 4.5vw;
+    }
   }
 }
 
