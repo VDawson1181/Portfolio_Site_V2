@@ -187,15 +187,9 @@
         margin: 0 !important; padding: 0 !important;
       }
 
-      #MainPage, #portfolio{
+      #MainPage, #portfolio, .resume > h6{
         display: none;
       }
-
-    .resume{
-    
-        & > h6{
-            display: none;
-        }
 
         .resumeInner {
             background-color: #fff;
@@ -341,5 +335,5 @@
                 }
             }
         }
-    }
+    /* } */
   }
