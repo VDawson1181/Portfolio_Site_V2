@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Button(props){
+function Button({name,indexNo,url}){
 
     const handleClick = (e, name, indexNo, url) => {
         e.preventDefault();
@@ -16,7 +16,7 @@ function Button(props){
     // const handleClick2 = (name) => console.log(`${name} stop clicking me!`);
 
     return(
-        <button className="button" onClick={(e) => handleClick(e,props.name, props.indexNo, props.url)}>View</button>
+        <button className="button" onClick={(e) => handleClick(e,name, indexNo, url)}>View Live Site</button>
         // <button className="button" onClick={() => handleClick2(props.name)}>Click Me</button>
     );
 }

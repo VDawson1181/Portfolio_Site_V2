@@ -4,46 +4,52 @@ import Button from './Button.jsx'
 import Modal from '../components/Modal/Modal.jsx';
 // import profilePic from './assets/react.svg';
 
-function Card(props){
-// const Card = (category, userList) => {
+function Card({category, items}){
+    // const Card = (category, items) => {
     const [modal, setModal] = useState(false);
     const [modalContent, setModalContent] = useState(null);
 
-    const category = props.category;
-    const userList = props.items;
-
-    
-
-    const [cardVisible, setCardVisible] = useState(false)
-    const handleCardClick = (e,item) => {
-        e.stopPropagation();
-        const updatedItem = item.map({ item})
-        setCardVisible(true)
-      }
+    // const [cardVisible, setCardVisible] = useState(false)
+    // const handleCardClick = (e,item) => {
+    //     e.stopPropagation();
+    //     const updatedItem = item.map({ item})
+    //     setCardVisible(true)
+    // }
 
     const handleModal = (content) => {
         setModalContent(content);
         setModal(true)
     }
 
-      const cards = userList.map((item, index) => <div key={index} className={item.isValid ? "card cardValid" : "card cardInvalid"}>
+    // const cardDescription = items.map((item, index) => <div key={index} className="cardFocus">
+    //         <h2 className="card-title">{item.name}</h2>
+    //         <p className="card-text">#{index+1} -- {item.copy}</p>     
+    //         <p className="card-text">{item.descrip}</p>
+    //     </div>)
+
+
+    // const cardModal = items.map((item, index) => <div key={index} className="cardFocus">
+    //     <h2 className="card-title">{item.name}</h2>
+    //     <p>{item.descrip}</p>
+    //     <ul className="images">
+    //         <li><img className="card-image" src={item.image} alt="Image" loading="lazy"/></li>
+    //     </ul>
+    // </div>)
+
+    const cards = items.map((item, index) => <div key={index} className={item.isValid ? "card cardValid" : "card cardInvalid"}>            
                 <div className="cardContent">
                     <h2 className="card-title">{item.name}</h2>
-                    <p className="card-text">#{index+1} -- {item.copy}</p>     
-                    {/* <p className="card-text">{item.descrip}</p> */}
-                    {/* <Button indexNo={index+1} name={item.name} url={item.url}/>*/}
+                    {/* <p className="card-text">#{index+1} -- {item.copy}</p>      */}
+                    <div className="card-text">{item.descrip}</div>
+                    
                     {/* <button>View</button> */}
-                    <button className={item.id} onClick={() => handleModal([<h2 className="card-title">{item.name}</h2>,item.descrip,<img className="card-image" src={item.image} alt="Image" loading="lazy"/>])}>Open Modal</button>
+                    {/* <button className={item.id} onClick={() => handleModal([<h2 className="card-title">{item.name}</h2>,item.descrip,<img className="card-image" src={item.image} alt="Image" loading="lazy"/>])}>See More</button> */}
+                    <button className="seeMoreBtn" onClick={() => handleModal([ <h2 className="card-title">{item.name}</h2>,<div className="card-text">{item.descrip}</div>,<ul className="images"><li><img className="card-image" src={item.image[0]} alt="Image" loading="lazy"/></li><li><img className="card-image" src={item.image[1]} alt="Image" loading="lazy"/></li></ul>,<Button indexNo={index+1} name={item.name} url={item.url}/> ]) }>See More</button>
                 </div>
-                <img className="card-image" src={item.image} alt="Image" loading="lazy"/>
-        </div>);
+                <img className="card-image" src={item.image[0]} alt="Image" loading="lazy"/>
+    </div>);
 
-    const cardDescription = userList.map((item, index) => 
-            <div key={index} className="cardFocus">
-                <h2 className="card-title">{item.name}</h2>
-                <p className="card-text">#{index+1} -- {item.copy}</p>     
-                <p className="card-text">{item.descrip}</p>
-            </div>)
+
 
 
         return(

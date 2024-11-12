@@ -1,9 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
+// const images = require.context('../../src/assets/', true);
+// const imageList = images.keys().map(image => images(image));
+
 // image import
 import rewardsScr from '../../src/assets/rewards_scr.png'
 import woodlockedLogo from '../../src/assets/wlocked_Scr.png'
 import prizeMatcherLogo from '../../src/assets/prizeMatcher_Scr.png'
+import prizeMatcherMob from '../../src/assets/prizeMatcher_Scr.png'
 import moneyDropLogo from '../../src/assets/moneyDrop_Scr.png'
 import moneyTreeLogo from '../../src/assets/moneyTree_Scr.png'
 import impInfoLogo from '../../src/assets/impInfo_Scr.png'
@@ -25,18 +29,18 @@ const PortfolioApp = () => {
             id:"rewards",
             name: "PCH Rewards", 
             copy: "PCH Rewards Site", 
-            descrip: "Rewards: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti incidunt molestias repellat repellendus necessitatibus corrupti ipsum, accusantium voluptates distinctio odio soluta officiis sunt perspiciatis blanditiis enim temporibus quibusdam aliquid? Delectus?",
+            descrip: "This is the PCH rewards site. The purpose of this site, is to let our users spend the tokens that they've accrued entering contests and playing our games. Built with Laravel.",
             url: "https://rewards.pch.com/", 
-            image: rewardsScr
+            image: [rewardsScr,rewardsScr]
         },
         {
             isValid: true,
             id:"pmatcher", 
             name: "Prize Matcher", 
             copy: "Publishers Clearing House Interactive Prize Component", 
-            descrip: "Prize Match: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti incidunt molestias repellat repellendus necessitatibus corrupti ipsum, accusantium voluptates distinctio odio soluta officiis sunt perspiciatis blanditiis enim temporibus quibusdam aliquid? Delectus?",
+            descrip: "This prize matcher component is a bonus element for users that were logged into the rewards site. It's a fun interactive component that asks the user 6 questions, and assigns them 4 gift cards that they could use their tokens to redeem based on their answers.",
             url: "https://vdawson1181.github.io/portfolio-files/PrizeMatcher_Component/pm_LB_Component.html", 
-            image: prizeMatcherLogo
+            image: [prizeMatcherLogo,prizeMatcherMob]
         },
         {
             isValid: true, 
@@ -45,7 +49,7 @@ const PortfolioApp = () => {
             copy: "Construction Company Site", 
             descrip: "Woodlocked: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti incidunt molestias repellat repellendus necessitatibus corrupti ipsum, accusantium voluptates distinctio odio soluta officiis sunt perspiciatis blanditiis enim temporibus quibusdam aliquid? Delectus?",
             url: "https://vdawson1181.github.io/WoodlockedProj/index.html", 
-            image: woodlockedLogo
+            image: [woodlockedLogo,woodlockedLogo]
         },
         {
             isValid: true, 
@@ -54,7 +58,7 @@ const PortfolioApp = () => {
             copy: "Publishers Clearing House E-Commerce Landing Page", 
             descrip: "Money Drop: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti incidunt molestias repellat repellendus necessitatibus corrupti ipsum, accusantium voluptates distinctio odio soluta officiis sunt perspiciatis blanditiis enim temporibus quibusdam aliquid? Delectus?",
             url: "https://vdawson1181.github.io/portfolio-files/MoneyDrop/page1.html", 
-            image: moneyDropLogo
+            image: [moneyDropLogo,moneyDropLogo]
         },
         {
             isValid: false, 
@@ -62,7 +66,7 @@ const PortfolioApp = () => {
             name: "Money Tree", 
             copy: "Publishers Clearing House E-Commerce Component", 
             url: "https://vdawson1181.github.io/portfolio-files/money-tree-OB-addOn/preview.html", 
-            image: moneyTreeLogo
+            image: [moneyTreeLogo,moneyTreeLogo]
         },
         {
             isValid: false, 
@@ -70,7 +74,7 @@ const PortfolioApp = () => {
             name: "Important Info", 
             copy: "Publishers Clearing House E-Commerce Landing Page", 
             url: "https://vdawson1181.github.io/portfolio-files/Important_Info/page1.html", 
-            image: impInfoLogo
+            image: [impInfoLogo,impInfoLogo]
         },
         {
             isValid: true, 
@@ -79,7 +83,7 @@ const PortfolioApp = () => {
             copy: "Publishers Clearing House E-Commerce Landing Page", 
             descrip: "Make It Count: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti incidunt molestias repellat repellendus necessitatibus corrupti ipsum, accusantium voluptates distinctio odio soluta officiis sunt perspiciatis blanditiis enim temporibus quibusdam aliquid? Delectus?",
             url: "https://vdawson1181.github.io/portfolio-files/Make_It_Count/page1.html", 
-            image: makeItCountLogo
+            image: [makeItCountLogo,makeItCountLogo]
         },
         {
             isValid: true, 
@@ -88,7 +92,7 @@ const PortfolioApp = () => {
             copy: "Publishers Clearing House E-Commerce Landing Page", 
             descrip: "WinTonight: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti incidunt molestias repellat repellendus necessitatibus corrupti ipsum, accusantium voluptates distinctio odio soluta officiis sunt perspiciatis blanditiis enim temporibus quibusdam aliquid? Delectus?",
             url: "https://vdawson1181.github.io/portfolio-files/Win_1MM_Tonight_V13/page1.html", 
-            image: winTonightLogo
+            image: [winTonightLogo,winTonightLogo]
         },
         {
             isValid: false, 
@@ -96,7 +100,7 @@ const PortfolioApp = () => {
             name: "Day of Deals V4", 
             copy: "Publishers Clearing House E-Commerce Landing Page", 
             url: "https://vdawson1181.github.io/portfolio-files/Day_Of_Deals_V4/page1.html", 
-            image: dayOfDealsLogo
+            image: [dayOfDealsLogo,dayOfDealsLogo]
         },
         {
             isValid: false, 
@@ -104,7 +108,7 @@ const PortfolioApp = () => {
             name: "Prize Payment Transaction", 
             copy: "Publishers Clearing House E-Commerce Landing Page", 
             url: "https://vdawson1181.github.io/portfolio-files/Prize_Payment_Trans_V3/page1.html", 
-            image: prizePayTransLogo
+            image: [prizePayTransLogo,prizePayTransLogo]
         },
       ];
       // const projects = [
@@ -123,6 +127,12 @@ const PortfolioApp = () => {
                 {/* {projects.length > 0 && <Card items={projects} category="Personal Projects"/>} */}
             </div>
         </div>
+
+        {/* <div className='imageGallery'>
+            {imageList.map((image, index) => (
+                <img key={index} src={image.default} alt={`image-${index}`} />
+            ))}
+        </div> */}
     </>
   )
 }

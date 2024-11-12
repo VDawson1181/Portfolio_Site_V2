@@ -74,7 +74,7 @@ background: linear-gradient(348deg, rgba(0,0,0,1) 0%, rgba(9,121,75,1) 50%, rgba
   & .mainHeader{
     /* font-size:clamp(4vw, 2.5vw, 2.5vw); */
     font-size: 2.5vw;
-    line-height: 2.5vw;
+    line-height: 4.5vw;
     
 
     h1, h2{
