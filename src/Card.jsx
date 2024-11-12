@@ -14,21 +14,19 @@ function Card(props){
 
     
 
-    // const [cardVisible, setCardVisible] = useState(false)
-    // const handleCardClick = (e,item) => {
-    //     e.stopPropagation();
-    //     const updatedItem = item.map({ item})
-    //     setCardVisible(true)
-    //   }
+    const [cardVisible, setCardVisible] = useState(false)
+    const handleCardClick = (e,item) => {
+        e.stopPropagation();
+        const updatedItem = item.map({ item})
+        setCardVisible(true)
+      }
 
     const handleModal = (content) => {
         setModalContent(content);
         setModal(true)
     }
 
-    //   const cards = userList.map((item, index) => <div key={index} className={item.isValid ? "card cardValid" : "card cardInvalid"}>
-      const cards = userList.map((item, index) => <div key={index}>
-            <div className="card">
+      const cards = userList.map((item, index) => <div key={index} className={item.isValid ? "card cardValid" : "card cardInvalid"}>
                 <div className="cardContent">
                     <h2 className="card-title">{item.name}</h2>
                     <p className="card-text">#{index+1} -- {item.copy}</p>     
@@ -38,8 +36,6 @@ function Card(props){
                     <button className={item.id} onClick={() => handleModal([<h2 className="card-title">{item.name}</h2>,item.descrip,<img className="card-image" src={item.image} alt="Image" loading="lazy"/>])}>Open Modal</button>
                 </div>
                 <img className="card-image" src={item.image} alt="Image" loading="lazy"/>
-            </div>
-
         </div>);
 
     const cardDescription = userList.map((item, index) => 
