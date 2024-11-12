@@ -40,11 +40,11 @@ function Card({category, items}){
                 <div className="cardContent">
                     <h2 className="card-title">{item.name}</h2>
                     {/* <p className="card-text">#{index+1} -- {item.copy}</p>      */}
-                    <div className="card-text">{item.descrip}</div>
+                    <div className="card-text">{item.copy}</div>
                     
                     {/* <button>View</button> */}
                     {/* <button className={item.id} onClick={() => handleModal([<h2 className="card-title">{item.name}</h2>,item.descrip,<img className="card-image" src={item.image} alt="Image" loading="lazy"/>])}>See More</button> */}
-                    <button className="seeMoreBtn" onClick={() => handleModal([ <h2 className="card-title">{item.name}</h2>,<div className="card-text">{item.descrip}</div>,<ul className="images"><li><img className="card-image" src={item.image[0]} alt="Image" loading="lazy"/></li><li><img className="card-image" src={item.image[1]} alt="Image" loading="lazy"/></li></ul>,<Button indexNo={index+1} name={item.name} url={item.url}/> ]) }>See More</button>
+                    <button className="seeMoreBtn" onClick={() => handleModal([ <h2 className="card-title">{item.name}</h2>,<div className="card-text">{item.descrip}</div>,<div className="images"><img className="card-image" src={item.image[1]} alt="Image" loading="lazy"/></div>,<Button indexNo={index+1} name={item.name} url={item.url}/> ]) }>See More</button>
                 </div>
                 <img className="card-image" src={item.image[0]} alt="Image" loading="lazy"/>
     </div>);

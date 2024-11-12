@@ -6,6 +6,8 @@
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #999;
+    /* border-radius: 15px; */
+    overflow: scroll;
 
     & button{
         background-color: rgb(255, 255, 255);
@@ -33,19 +35,22 @@
           /* transform: scale(1.1); */
         }
       }  
+
+      .card-image{
+        width: 100%;
+        /* width: calc(100% / 3 * 2 + 0.0033rem); */
+        /* max-height: 650px; */
+        /* z-index: 55; */
+        /* background-color: hsl(0, 0%, 0%); */
+        /* object-fit: cover; */
+        /* object-position: center top; */
+        justify-self: center;
+    }
     
     ul{
         display: flex;
         li{      
-            .card-image{
-                width: calc(100% / 3 * 2 + 0.0033rem);
-                /* max-height: 650px; */
-                z-index: 55;
-                background-color: hsl(0, 0%, 0%);
-                object-fit: cover;
-                object-position: center top;
-                justify-self: center;
-            }
+
         }
     } 
 

@@ -26,7 +26,7 @@
       & .card{
         background-color: rgb(255, 255, 255);
         /* background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(255, 255, 255)); */
-        border-radius: 5px;
+        border-radius: 15px;
         border: 2px solid hsl(0, 0%, 100%);
         box-shadow: 5px 5px 15px hsl(0,0%,0%,0.1);
         margin: 10px 0;
@@ -43,7 +43,7 @@
         transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
       
           & .card-image{
-            width: calc(100% / 3 * 1.75 + 0.0033rem);
+            width: calc(100% / 3 * 1.5 + 0.0033rem);
             max-height: 400px;
             z-index: 55;
             background-color: hsl(0, 0%, 0%);

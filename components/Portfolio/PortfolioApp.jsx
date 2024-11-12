@@ -6,6 +6,7 @@ import { useState } from 'react'
 // image import
 import rewardsScr from '../../src/assets/rewards_scr.png'
 import woodlockedLogo from '../../src/assets/wlocked_Scr.png'
+import woodlockedCombo from '../../src/assets/wlocked_Combo_Lrg.png'
 import prizeMatcherLogo from '../../src/assets/prizeMatcher_Scr.png'
 import prizeMatcherMob from '../../src/assets/prizeMatcher_Scr.png'
 import moneyDropLogo from '../../src/assets/moneyDrop_Scr.png'
@@ -28,8 +29,8 @@ const PortfolioApp = () => {
             isValid: true, 
             id:"rewards",
             name: "PCH Rewards", 
-            copy: "PCH Rewards Site", 
-            descrip: "This is the PCH rewards site. The purpose of this site, is to let our users spend the tokens that they've accrued entering contests and playing our games. Built with Laravel.",
+            copy: "The PCH Rewards center. Their rewards program lets you turn Tokens you earn into entries to win prizes you want like cash and gift cards, Ford vehicles, premium merchandise and so much more. The more Tokens you redeem the more chances you have to win big.", 
+            descrip: "This is the PCH rewards site redesign. It's a space for our users to come to and turn the tokens that they've accrued entering contests and playing our games into more prize winning opportunities. Built with Laravel.",
             url: "https://rewards.pch.com/", 
             image: [rewardsScr,rewardsScr]
         },
@@ -46,10 +47,10 @@ const PortfolioApp = () => {
             isValid: true, 
             id: "wlocked",
             name: "Woodlocked", 
-            copy: "Construction Company Site", 
-            descrip: "Woodlocked: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti incidunt molestias repellat repellendus necessitatibus corrupti ipsum, accusantium voluptates distinctio odio soluta officiis sunt perspiciatis blanditiis enim temporibus quibusdam aliquid? Delectus?",
+            copy: "An exotic lumber, and construction company - focusing on the crafting of tables, furniture, light fixtures, decks, siding, masonry, and roofing services.", 
+            descrip: "Woodlocked's company site highlighted their two businesses. An exotic lumber company, and a construction one. I collaborated with the owners, and their design team to put together a site that highlighted the custom design, and fabrication of exotic wood products that transformed their client's spaces.",
             url: "https://vdawson1181.github.io/WoodlockedProj/index.html", 
-            image: [woodlockedLogo,woodlockedLogo]
+            image: [woodlockedLogo,woodlockedCombo]
         },
         {
             isValid: true, 
