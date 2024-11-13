@@ -1,32 +1,5 @@
-
-
-/* .faculty-glyphic-regular {
-  font-family: "Faculty Glyphic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-} 
-  
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.doto-<uniquifier> {
-  font-family: "Doto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "ROND" 0;
-}
-*/
 @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
-body {
-
-  margin: 10px;
-  /* display: flex; */
-  /* place-items: center; */
-
-}
 :root {
   font-family: "Mona Sans", sans-serif;
   font-optical-sizing: auto;
@@ -34,25 +7,16 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   scrollbar-width: thin;
-  /* line-height: 1.5; */
-  /* max-width: 1280px; */
+
   max-width: 100vw;
   min-width: 320px;
   min-height: 100vh;
-  margin: 0 auto;
-  /* padding: 5px; */
-  /* text-align: center; */
+  margin: 10px;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /* background: rgba(85,63,251,1);
-  background: linear-gradient(326deg, rgba(85,63,251,1) 0%, rgba(0,0,0,1) 100%); */
-
-  /* background: rgb(0,0,0);
-background: linear-gradient(348deg, rgba(0,0,0,1) 0%, rgba(9,121,75,1) 50%, rgba(85,63,251,1) 100%); */
 
   background: rgb(32, 32, 32);
-  /* background: linear-gradient(301deg, rgba(9,121,75,1) 33%, rgba(85,63,251,1) 100%); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -111,12 +75,6 @@ background: linear-gradient(348deg, rgba(0,0,0,1) 0%, rgba(9,121,75,1) 50%, rgba
 
 
 @media (width <= 500px) {
-  body {
-    margin: 10px;
-    max-width: 100vw;
-    min-width: 320px;
-    min-height: 100vh;
-  }
 
   #MainPage{
     box-sizing: border-box;

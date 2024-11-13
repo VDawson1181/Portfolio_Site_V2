@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import PortfolioApp from '../components/Portfolio/PortfolioApp';
 import Resume from '../components/Resume/Resume';
 import ContactMe from '../components/ContactMe/ContactMe';
+import './reset.css'
 import './App.css'
 
 function App() {
