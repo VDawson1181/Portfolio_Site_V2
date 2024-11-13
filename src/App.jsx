@@ -28,8 +28,8 @@ function App() {
   // }
 
     const [mainVisible, setMainVisible] = useState(true)
+    const [resumeVisible, setResumeVisible] = useState(true)
     const [portfolioVisible, setportfolioVisible] = useState(false)
-    const [resumeVisible, setResumeVisible] = useState(false)
     const [contactMeVisible, setContactMeVisible] = useState(false)
 
   function setAllHidden(){
@@ -43,6 +43,12 @@ function App() {
     e.stopPropagation();
     setAllHidden()
     setMainVisible(true)
+    setResumeVisible(true)
+  }
+  const handleResumeClick = (e) => {
+    e.stopPropagation();
+    setAllHidden()
+    setResumeVisible(true)
   }
 
   const handlePortfolioClick = (e) => {
@@ -51,11 +57,6 @@ function App() {
     setportfolioVisible(true)
   }
 
-  const handleResumeClick = (e) => {
-    e.stopPropagation();
-    setAllHidden()
-    setResumeVisible(true)
-  }
 
   const handleContactMeClick = (e) => {
     e.stopPropagation();
@@ -75,6 +76,7 @@ function App() {
         </div>
 
         <div className="navbar">
+          {/* <Navbar mainVisible={handleMainClick} resumeClick={handleResumeClick} portfolioClick={handlePortfolioClick} contactMeClick={handleContactMeClick}/> */}
           <Navbar mainVisible={handleMainClick} resumeClick={handleResumeClick} portfolioClick={handlePortfolioClick} contactMeClick={handleContactMeClick}/>
         </div>
 

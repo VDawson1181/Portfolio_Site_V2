@@ -28,13 +28,13 @@ function Card({category, items}){
     //     </div>)
 
 
-    // const cardModal = items.map((item, index) => <div key={index} className="cardFocus">
-    //     <h2 className="card-title">{item.name}</h2>
-    //     <p>{item.descrip}</p>
-    //     <ul className="images">
-    //         <li><img className="card-image" src={item.image} alt="Image" loading="lazy"/></li>
-    //     </ul>
-    // </div>)
+    const cardModal = items.map((item, index) => <div key={index} className="cardFocus">
+        <h2 className="card-title">{item.name}</h2>
+        <p>{item.descrip}</p>
+        <ul className="images">
+            <li><img className="card-image" src={item.image} alt="Image" loading="lazy"/></li>
+        </ul>
+    </div>)
 
     const cards = items.map((item, index) => <div key={index} className={item.isValid ? "card cardValid" : "card cardInvalid"}>            
                 <div className="cardContent">

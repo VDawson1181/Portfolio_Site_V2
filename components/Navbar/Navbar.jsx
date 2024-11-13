@@ -21,13 +21,13 @@ const Navbar = (props) => {
           </p>
           <p>Home</p>
         </li>
-        <li onClick={props.resumeClick}>
+        {/* <li onClick={props.resumeClick}>
           <p>
-            {/* <a href={vdResume} download="VDawson_Resume"><RiFilePaper2Line /></a> */}
+            <a href={vdResume} download="VDawson_Resume"><RiFilePaper2Line /></a>
             <RiFilePaper2Line />
           </p>
           <p>Resume</p>
-        </li>
+        </li> */}
         <li onClick={props.portfolioClick}>
           <p>
             {/* <a onClick={() => handleToggle()}><FaRegFolderOpen /></a> */}
@@ -35,13 +35,13 @@ const Navbar = (props) => {
           </p>
           <p>Portfolio</p>
         </li> 
-        <li onClick={props.contactMeClick}>            
+        {/* <li onClick={props.contactMeClick}>            
           <p>
-            {/* <a href="mailto:VDawson647@gmail.com"><MdContactMail /></a> */}
+            <a href="mailto:VDawson647@gmail.com"><MdContactMail /></a>
             <MdContactMail />
           </p>
           <p>Contact</p>
-        </li>
+        </li> */}
       </ul>
     </>
   )

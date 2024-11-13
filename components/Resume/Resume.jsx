@@ -18,7 +18,8 @@ const Resume = () => {
                     <h1>Valmon Dawson</h1>
                     <h2>Front-End Developer</h2>
                     <h3>347.605.3414</h3>
-                    <h3>VDawson647@gmail.com</h3>
+                    <h3><a href="mailto:VDawson647@gmail.com">VDawson647@gmail.com</a></h3>
+                    <h3><a href="https://www.linkedin.com/in/vdawson647/"  target="_blank">https://www.linkedin.com/in/vdawson647/</a></h3>
                     <h3>https://vdawson647.dev/</h3>
                 </div>
                 <div className="resumeOverview resumeContainer">
