@@ -87,6 +87,15 @@
                     color: orangered;  
                 }
             }
+
+            @media (width <= 500px) {
+
+                h3{
+                    font-size: 14px;
+                    line-height: 18px;       
+                    color: orangered;    
+                }
+              }
         }
         
         .resumeContainer{
