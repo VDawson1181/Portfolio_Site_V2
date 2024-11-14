@@ -90,8 +90,8 @@ const PortfolioApp = () => {
             isValid: true, 
             id: "PortfolioV1",
             name: "Val Dawson's Portfolio Site -- V1", 
-            copy: "The first version of my personal portfolio site...", 
-            descrip: "Wanted to put together a site that showcased the skills that i've amassed over the years and some of the work that I had been doing professionally. As you can see the first go around didn't have the best design. As a result, i immediately started on V2. Receiving harsh feed back is critical to ironing out any flaws that may come up with your work. I'm lucky to have great friends and colleagues that are willing to hand down some 'tough love' in order to get me to pivot. I'll continue tinkering and asking for feedback. Everything's a process right?",
+            copy: "The first version of my personal portfolio site. Gotta put your best foot forward, right?!?", 
+            descrip: "I wanted to put together a site that showcased some of the things thatI've worked on professionally through the years, as well as the skills that i've amassed. As you can see the first go around didn't have the best design. As a result, i immediately started on V2. Receiving harsh feed back is critical to ironing out any flaws that may come up with your work. I'm lucky to have great friends and colleagues that are willing to hand down some 'tough love' in order to get me to pivot. I'll continue tinkering and asking for feedback. Everything's a process right?",
             url: "https://vdawson1181.github.io/Portfolio_Site/", 
             image: [portfolioMain,portfolioCombo]
         },

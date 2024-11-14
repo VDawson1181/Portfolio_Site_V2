@@ -35,7 +35,7 @@
         box-shadow: 0px 0px 0px hsl(0,0%,0%,1);
 
         &:first-of-type{
-            right: 170px;
+            right: 90px;
         }
 
         &:last-of-type{
