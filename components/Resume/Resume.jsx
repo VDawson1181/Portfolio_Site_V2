@@ -58,13 +58,13 @@ const Resume = () => {
                                     <ul className='responsibilityList'>
                                         <li>Created components for PCH's rewards site.</li>
                                         <li>Built eCommerce landing pages.</li>
-                                        <li>Team lead for our eCommerce team.
+                                        <li>Lead our eCommerce team.
                                             <ul>
                                                 <li>Providing training & guidance to the team.</li>
                                                 <li>Managed team's workflow</li>
+                                                <li>Created and maintained the PCH UI Team's wiki page. (Technical standards, Best practices)</li>
                                             </ul>
-                                        </li>
-                                        <li>Created and maintained the PCH UI Team's wiki page. (Technical standards, Best practices)</li>
+                                        </li>                                        
                                     </ul>
                                 </li>
                                 <li className='employerJob'>
