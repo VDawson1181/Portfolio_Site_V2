@@ -148,9 +148,9 @@
                     span{
                         font-size: 12px;
                         line-height: 16px;
-                        display: block;
+                        display: inline;
                         font-weight: normal;
-                        color: grey;
+                        color: #4b4949;
                     }
                 }
                 .responsibilityList{
@@ -182,9 +182,9 @@
                 span{
                     font-size: 12px;
                     line-height: 16px;
-                    display: block;
+                    display: inline;
                     font-weight: normal;
-                    color: grey;
+                    color: #4b4949;
                 }
             }
             ul.responsibilityList{
@@ -349,9 +349,9 @@
                         span{
                             font-size: 12px;
                             line-height: 16px;
-                            display: block;
+                            display: inline;
                             font-weight: normal;
-                            color: grey;
+                            color: #4b4949;
                         }
                     }
                     .responsibilityList{
@@ -383,9 +383,9 @@
                     span{
                         font-size: 12px;
                         line-height: 16px;
-                        display: block;
+                        display: inline;
                         font-weight: normal;
-                        color: grey;
+                        color: #4b4949;
                     }
                 }
                 ul.responsibilityList{
