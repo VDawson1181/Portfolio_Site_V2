@@ -17,7 +17,7 @@ const Modal = ({ openModal, closeModal, children }) => {
   return (
     <dialog className="portfolioModal" ref={ref} onCancel={closeModal}>
         {children}
-        <button onClick={closeModal}>Close Modal</button>
+        <button onClick={closeModal}>Close</button>
     </dialog>
   )
 }
