@@ -43,13 +43,26 @@
         }
 
         &:hover{
-          box-shadow: 6px -6px 0px rgba(85,63,251,1);;
+          box-shadow: 6px -6px 0px rgba(85,63,251,1);
           /* transform: scale(1.1); */
         }
       }  
 
+      h2{
+        font-size: 26px;
+        line-height: 26px;
+      }
+
+      .card-text{
+        padding: 40px 0;
+
+        font-size: 20px;
+        line-height: 28px;
+      }
+
       .card-image{
         width: 100%;
+        max-width: 700px;
         /* width: calc(100% / 3 * 2 + 0.0033rem); */
         /* max-height: 650px; */
         /* z-index: 55; */
