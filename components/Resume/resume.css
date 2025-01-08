@@ -83,13 +83,13 @@
                 line-height: 20px;  
                 
                 span{
-                    color: orangered;   
+                    color: #006BB6;   
                 }
                 
                 &.pfLink{ display: none; }
                 
                 & a{
-                    color: orangered;  
+                    color: #006BB6;  
                     text-decoration: none;
 
                     &:hover{
@@ -112,7 +112,7 @@
             hr{
                 border: none;
                 width: 2px;
-                background-color: orangered;
+                background-color: #006BB6;
                 padding: 0;
                 margin: 0 10px;
             }
@@ -147,6 +147,11 @@
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 22px;
+
+                & span{
+                    font-size: 14px;
+                    font-weight: normal;
+                }
             }
             ul li.employerJob{
                 padding: 0px 0 10px 0px;
@@ -158,7 +163,7 @@
 
                     span{
                         font-size: 12px;
-                        line-height: 16px;
+                        line-height: 14px;
                         display: inline;
                         font-weight: normal;
                         color: #4b4949;
@@ -245,10 +250,10 @@
                     h3{
                         font-size: 14px;
                         line-height: 18px;     
-                        color: orangered;    
+                        color: #006BB6;    
                         
                         & a{
-                            color: orangered;  
+                            color: #006BB6;  
                             text-decoration: none;
                         }
                     }
@@ -300,13 +305,13 @@
                     line-height: 20px;     
                     
                     span{
-                        color: orangered;    
+                        color: #006BB6;    
                     }
 
                     &.pfLink{ display: block; }
                     
                     & a{
-                        color: orangered;  
+                        color: #006BB6;  
                         text-decoration: none;
                     }
                 }
@@ -325,7 +330,7 @@
                 hr{
                     border: none;
                     width: 2px;
-                    background-color: orangered;
+                    background-color: #006BB6;
                     padding: 0;
                     margin: 0 10px;
                 }
@@ -361,6 +366,11 @@
                     font-weight: bold;
                     font-size: 18px;
                     line-height: 22px;
+
+                    & span{
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
                 }
                 ul li.employerJob{
                     padding: 0px 0 10px 0px;

@@ -51,15 +51,15 @@ const Resume = () => {
                     <hr />
                     <ul className="sectionMain">
                         <li>
-                            <p className='employerHeader'>Front-End Developer </p>
+                            <p className='employerHeader'>Front-End Developer <span>2009 - 2024</span></p>
                             <ul>
                                 <li className='employerJob'>
-                                    <p className='subHeader'><span>Publishers Clearing House | Jericho, NY | 2009 - 2024</span></p>
+                                    <p className='subHeader'><span>Publishers Clearing House | Jericho, NY</span></p>
                                     <ul className='responsibilityList'>
 
                                         <li>Created server side front-end components for rewards.pch.com</li>
                                         <li>Collaborated with cross functional teams to develop, modify, troubleshoot, and maintain a library of over 150 bespoke eCommerce landing pages.</li>
-                                        <li>Provided Onboarding, training, & guidance to the eCommerce development team.</li>
+                                        <li>Provided onboarding, training, & guidance to the eCommerce development team.</li>
                                         <li>Defined and documented the departments technical standards, and  best practices to create the teams internal wiki site.</li>                                       
                                     </ul>
                                 </li>
@@ -74,10 +74,10 @@ const Resume = () => {
                             </ul>
                         </li>
                         <li>
-                            <p className='employerHeader'>Web Producer / QA Specialist</p>
+                            <p className='employerHeader'>Web Producer / QA Specialist <span>2006 - 2009</span></p>
                             <ul>
                                 <li className='employerJob'>
-                                    <p className='subHeader'><span>Venture Direct Worldwide | New York, NY | 2006 - 2009</span></p>
+                                    <p className='subHeader'><span>Venture Direct Worldwide | New York, NY</span></p>
                                     <ul className='responsibilityList'>
                                         <li>Created, updated, and maintained lead-generation microsites for online schools based on client specifications using a combination of HTML, CSS, JavaScript, JQuery, & PHP.</li>
                                         <li>Verified the integrity of leads that were generated.</li>
