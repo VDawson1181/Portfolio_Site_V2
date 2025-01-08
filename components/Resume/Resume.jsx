@@ -58,7 +58,7 @@ const Resume = () => {
                                     <ul className='responsibilityList'>
 
                                         <li>Created server side front-end components for rewards.pch.com</li>
-                                        <li>Worked closely with cross functional teams to develop, modify, troubleshoot, and maintain a library of over 150 bespoke eCommerce landing pages.</li>
+                                        <li>Collaborated with cross functional teams to develop, modify, troubleshoot, and maintain a library of over 150 bespoke eCommerce landing pages.</li>
                                         <li>Provided Onboarding, training, & guidance to the eCommerce development team.</li>
                                         <li>Defined and documented the departments technical standards, and  best practices to create the teams internal wiki site.</li>                                       
                                     </ul>
