@@ -70,23 +70,31 @@
                 font-size: 44px;
                 line-height: 44px;
                 font-weight: bold;
-                text-align: center;
+                /* text-align: center; */
             }
             h2{
                 font-size: 28px;
                 line-height: 32px;
                 padding-bottom: 10px;
-                text-align: center;
+                /* text-align: center; */
             }
             h3{
-                font-size: 18px;
-                line-height: 22px;       
-                color: orangered;    
+                font-size: 14px;
+                line-height: 20px;  
+                
+                span{
+                    color: orangered;   
+                }
+                
+                &.pfLink{ display: none; }
                 
                 & a{
                     color: orangered;  
-                    text-decoration: underline 1px solid;
-                    
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline 1px solid;;
+                    }
                 }
             }
         }
@@ -99,6 +107,7 @@
                 padding: 10px 0;
                 flex: 1;
                 width: calc(100% / 3 * 1 + 0.0033rem);
+                font-weight: bold;
             }
             hr{
                 border: none;
@@ -140,7 +149,7 @@
                 line-height: 22px;
             }
             ul li.employerJob{
-                padding: 5px 0 10px 20px;
+                padding: 0px 0 10px 0px;
 
                 p.subHeader{
                     font-weight: bold;
@@ -156,9 +165,9 @@
                     }
                 }
                 .responsibilityList{
-                    padding-left: 20px;
+                    padding-left: 30px;
                     font-size: 14px;
-                    line-height:18px;
+                    line-height:20px;
     
                     li{
                         list-style:disc;
@@ -231,7 +240,7 @@
                         font-size: 22px;
                         line-height: 28px;
                         padding-bottom: 10px;
-                        text-align: center;
+                        /* text-align: center; */
                     }
                     h3{
                         font-size: 14px;
@@ -240,6 +249,7 @@
                         
                         & a{
                             color: orangered;  
+                            text-decoration: none;
                         }
                     }
                 }
@@ -262,7 +272,7 @@
         .resumeInner {
             background-color: #fff;
             color: #000;
-            padding: 10px;
+            padding: 20px 40px 20px 20px;
             font-size: 12px;
             line-height: 18px;
 
@@ -272,26 +282,32 @@
                 margin-bottom: 10px;
 
                 h1{ 
-                    font-size: 36px;
-                    line-height: 36px;
+                    font-size: 44px;
+                    line-height: 44px;
                     font-weight: bold;
-                    text-align: center;
+                    /* text-align: center; */
                 }
             
                 h2 {
                     font-size: 24px;
                     line-height: 28px;
                     padding-bottom: 4px;
-                    text-align: center;
+                    /* text-align: center; */
                 }
             
                 h3 {
-                    font-size: 16px;
-                    line-height: 20px;       
-                    color: orangered;    
+                    font-size: 14px;
+                    line-height: 20px;     
+                    
+                    span{
+                        color: orangered;    
+                    }
+
+                    &.pfLink{ display: block; }
                     
                     & a{
                         color: orangered;  
+                        text-decoration: none;
                     }
                 }
             }
@@ -304,6 +320,7 @@
                     padding: 10px 0;
                     flex: 1;
                     width: calc(100% / 3 * 1 + 0.0033rem);
+                    font-weight: bold;
                 }
                 hr{
                     border: none;
@@ -327,8 +344,9 @@
             }
 
             .resumeOverview .sectionMain {
-                font-size: 10px;
-                line-height: 14px;
+                font-size: 12px;
+                line-height: 18px;
+                /* padding-right: 20px; */
             }
 
             .resumeSkills .sectionMain .subCopy{
@@ -345,7 +363,7 @@
                     line-height: 22px;
                 }
                 ul li.employerJob{
-                    padding: 5px 0 10px 20px;
+                    padding: 0px 0 10px 0px;
 
                     p.subHeader{
                         font-weight: bold;
@@ -361,9 +379,9 @@
                         }
                     }
                     .responsibilityList{
-                        padding-left: 20px;
+                        padding: 0 30px;
                         font-size: 12px;
-                        line-height:16px;
+                        line-height:18px;
         
                         li{
                             list-style:disc;
