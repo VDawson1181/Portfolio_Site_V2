@@ -136,6 +136,8 @@
         }
 
         .resumeSkills .sectionMain .subCopy{
+            span.subHeader{display: none;}
+
             font-weight: bold;
             padding-bottom: 10px;
             font-size: 18px;
@@ -282,13 +284,13 @@
             line-height: 18px;
 
             .resumeHeader{
-                border-bottom: 2px solid #000;
-                padding-bottom: 10px;
-                margin-bottom: 10px;
+                /* border-bottom: 2px solid #000; */
+                padding-bottom: 0px;
+                margin-bottom: 5px;
 
                 h1{ 
-                    font-size: 44px;
-                    line-height: 44px;
+                    font-size: 34px;
+                    line-height: 34px;
                     font-weight: bold;
                     /* text-align: center; */
                 }
@@ -318,16 +320,20 @@
             }
 
             .resumeContainer{
-                display: flex;
+                /* display: flex; */
 
                 & > .subHeader{
-                    min-width: 70px;
-                    padding: 10px 0;
-                    flex: 1;
-                    width: calc(100% / 3 * 1 + 0.0033rem);
+                    font-size: 16px;
                     font-weight: bold;
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                    min-width: 60px;
+                    /* padding: 10px 0; */
+                    flex: 1;
+                    /* width: calc(100% / 3 * 1 + 0.0033rem); */
                 }
                 hr{
+                    display: none;
                     border: none;
                     width: 2px;
                     background-color: #006BB6;
@@ -336,9 +342,9 @@
                 }
                 
                 .sectionMain{
-                    padding: 10px 0;
+                    padding: 10px 0 0 20px;
                     width: calc(100% / 3 * 2.5 + 0.0033rem);
-                    border-bottom: 2px solid #000;
+                    /* border-bottom: 2px solid #000; */
                 }
                 &:first-of-type .sectionMain{
                     border: none;
@@ -354,12 +360,20 @@
                 /* padding-right: 20px; */
             }
 
-            .resumeSkills .sectionMain .subCopy{
-                font-weight: bold;
-                padding-bottom: 10px;
-                font-size: 14px;
-                line-height: 18px;
-            }
+            .resumeSkills .sectionMain{
+                p.subHeader{display: none;}
+                .subCopy{
+
+                    .subHeader{
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+
+                    padding-bottom: 5px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            } 
 
             .resumeWork .sectionMain li{
                 p.employerHeader{
