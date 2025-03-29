@@ -25,7 +25,7 @@ const Resume = () => {
                 <div className="resumeOverview resumeContainer">
                     <p className='subHeader'>Overview</p>
                     <hr />
-                    <p className="sectionMain">Results-driven Front-End Developer with experience in creating and managing dynamic eCommerce solutions. Proficient in Front-End Technologies, UI/UX design, and managing complex workflows. Demonstrated track record with over 15 years of experience in delivering high-impact web applications and daily email marketing campaigns to an audience of 15.1 million per day, generating $125 million annually.</p>
+                    <p className="sectionMain">Results-driven Front-End Developer with over 15 years experience in creating and managing dynamic eCommerce solutions. Proficient in Front-End Technologies, UI/UX design, and workflow optimization. Proven track record in delivering high-impact web applications and daily email marketing campaigns to an audience of over 15 million people per day, generating $125 million annually.</p>
                 </div>
                 <div className="resumeSkills resumeContainer">
                     <p className='subHeader'>Skills</p>
@@ -33,7 +33,7 @@ const Resume = () => {
                     <ul className="sectionMain">
                         <li>
                             <p className='subHeader'>Technologies</p>
-                            <p className="subCopy">HTML5, CSS3, JavaScript, JQuery, PHP, React, Vite, Git, Laravel Blades, Greensock (GSAP)</p>
+                            <p className="subCopy">HTML5, CSS3, JavaScript, JQuery, PHP, React, Vite, Git, Laravel Blades, Greensock (GSAP), Google Maps API</p>
                         </li>
                         <li>
                             <p className='subHeader'>Tools</p>
@@ -41,7 +41,7 @@ const Resume = () => {
                         </li>
                         <li>
                             <p className='subHeader'>Specialties</p>
-                            <p className="subCopy">UI/UX Design, Lead Generation, Direct Marketing, SEO, eCommerce Development, Proactive collaboration and communication</p>
+                            <p className="subCopy">UI/UX Design, Front-End Development & Performance Optimization, Agile Development & Cross-Team Collaboration, SEO, Workflow Optimization & Technical Documentation</p>
                         </li>
     
                     </ul>
@@ -51,16 +51,18 @@ const Resume = () => {
                     <hr />
                     <ul className="sectionMain">
                         <li>
-                            <p className='employerHeader'>Front-End Developer <span>2009 - 2024</span></p>
+                            <p className='employerHeader'>Publishers Clearing House - Front-End Developer</p>
                             <ul>
                                 <li className='employerJob'>
-                                    <p className='subHeader'><span>Publishers Clearing House | Jericho, NY</span></p>
+                                    <p className='subHeader'><span>2009 - 2024 | Jericho, NY</span></p>
                                     <ul className='responsibilityList'>
 
-                                        <li>Created server side front-end components for rewards.pch.com</li>
-                                        <li>Collaborated with cross functional teams to develop, modify, troubleshoot, and maintain a library of over 150 bespoke eCommerce landing pages.</li>
-                                        <li>Provided onboarding, training, & guidance to the eCommerce development team.</li>
-                                        <li>Defined and documented the departments technical standards, and  best practices to create the teams internal wiki site.</li>                                       
+                                        <li>Implemented server-side front-end components for rewards.pch.com, ensuring robust functionality and seamless user experiences.</li>
+                                        <li>Collaborated with cross-functional teams to develop, troubleshoot, and maintain a library of over 150 custom eCommerce landing pages.</li>
+                                        <li>Created functional Proof of concepts across various PCH properties to aid the creative and development process. </li>
+                                        <li>Supported PCH.com initiatives on 3rd party marketing platforms such as Salesforce Marketing Cloud, and MoEngage.</li>
+                                        <li>Onboarded, trained, and mentored the eCommerce development team, fostering professional growth and technical proficiency.</li>
+                                        <li>Authored the department's technical standards and best practices, establishing a comprehensive internal wiki to streamline team workflows.</li>                                    
                                     </ul>
                                 </li>
                                 {/* <li className='employerJob'>
@@ -74,15 +76,14 @@ const Resume = () => {
                             </ul>
                         </li>
                         <li>
-                            <p className='employerHeader'>Web Producer / QA Specialist <span>2006 - 2009</span></p>
+                            <p className='employerHeader'>Venture Direct Worldwide - Web Producer / QA Specialist</p>
                             <ul>
                                 <li className='employerJob'>
-                                    <p className='subHeader'><span>Venture Direct Worldwide | New York, NY</span></p>
+                                    <p className='subHeader'><span>2006 - 2009 | New York, NY</span></p>
                                     <ul className='responsibilityList'>
-                                        <li>Created, updated, and maintained lead-generation microsites for online schools based on client specifications using a combination of HTML, CSS, JavaScript, JQuery, & PHP.</li>
-                                        <li>Verified the integrity of leads that were generated.</li>
-                                        <li>Collaborated with clients and cross functional teams to troubleshoot and resolve lead generation, & HTTP Post issues.</li>
-                                        <li>Provided training & guidance to new team members.</li>
+                                        <li>Developed, updated, and maintained lead-generation microsites for online educational institutions using HTML, CSS, JavaScript, JQuery, and PHP.</li>
+                                        <li>Ensured the integrity of generated leads by verifying processes and resolving issues collaboratively with clients and internal teams.</li>
+                                        <li>Provided training and guidance to new team members, promoting consistent adherence to quality standards.</li>
 
                                         {/* <li>Created, Updated, and Maintained lead-generation microsites for online schools based on client specifications using a combination of HTML/CSS/Javascript/JQuery/PHP.</li>
                                         <li>Verified the integrity of leads that were generated.</li>
@@ -101,7 +102,7 @@ const Resume = () => {
                     <ul className="sectionMain">
                         <li>
                             <p className='subHeader'>Bachelor's of Technology in Computer Systems</p>
-                            <p className="subCopy"><span>New York City College Of Technology (CUNY) - Brooklyn, NY</span></p>
+                            <p className="subCopy"><span>CUNY New York City College Of Technology - 2006</span></p>
                             {/* <ul className='responsibilityList'>
                                 <li>Major: Computer Systems - GPA: 3.5</li>
                                 <li>Areas of Concentration: Web Design and Implementation, Program Design, LAN</li>
@@ -110,7 +111,7 @@ const Resume = () => {
                         </li>
                         <li>
                             <p className='subHeader'>Associate's Degree in Computer Programming</p>
-                            <p className="subCopy"><span>Borough of Manhattan Community College (CUNY) - New York, NY</span></p>
+                            <p className="subCopy"><span>CUNY Borough of Manhattan Community College - 2004</span></p>
                             {/* <ul className='responsibilityList'>
                                 <li>Major: Computer Programming</li>
                             </ul> */}
